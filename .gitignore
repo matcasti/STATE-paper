@@ -1,0 +1,23 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+.DS_Store
+
+# Quarto cache and scratch files
+.quarto/
+**/*.quarto_ipynb
+
+# rendered manuscripts: only the files named here are tracked
+manuscript/output/*/*
+!manuscript/output/journal/index.docx
+!manuscript/output/journal/index.pdf
+!manuscript/output/biorxiv/index.pdf
+
+# regenerated at every render
+results/claims_check.csv
+
+# build stamps and upload bundles made by the Makefile
+.build/
+dist/

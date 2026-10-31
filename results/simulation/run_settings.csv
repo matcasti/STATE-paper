@@ -1,0 +1,6 @@
+setting,value
+R_main,2000
+R_sweep,2000
+R_dose,600
+R_delta,1000
+R_conv,600

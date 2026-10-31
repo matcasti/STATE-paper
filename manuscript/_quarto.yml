@@ -1,0 +1,32 @@
+project:
+  output-dir: output/journal
+  render:
+    - index.qmd
+
+format:
+  docx:
+    reference-doc: templates/ref.docx
+  typst:
+    papersize: a4
+    fontsize: 11pt
+    template-partials:
+      - templates/typst-show.typ
+
+execute:
+  freeze: false
+
+authors:
+  - name: "Matías Castillo-Aguilar"
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Avenida Bulnes 01855, Punta Arenas, Chile."
+    email: "matias.castillo@umag.cl"
+    orcid: "0000-0001-7291-247X"
+  - name: "Diego Mabe-Castro"
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Avenida Bulnes 01855, Punta Arenas, Chile."
+    orcid: "0000-0002-6663-2153"
+  - name: "Cristian Núñez-Espinosa"
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Avenida Bulnes 01855, Punta Arenas, Chile."
+    email: cristian.nunez@umag.cl
+    corresponding: true
+    orcid: "0000-0002-9896-7062"
+
+bibliography: references.bib

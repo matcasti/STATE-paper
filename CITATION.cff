@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them as below."
+type: software
+title: "STATE paper: code and results for A Systems Theory of Cardiac-Autonomic Trajectories and Equilibria"
+abstract: >-
+  Code, exact calculations, simulations and manuscript sources for STATE, a systems
+  theory in which cardiac autonomic regulation is a latent stochastic dynamical system
+  observed through RR intervals. Every number in the manuscript is regenerated from this repository.
+authors:
+  - family-names: Castillo-Aguilar
+    given-names: Matías
+    orcid: "https://orcid.org/0000-0001-7291-247X"
+    email: matias.castillo@umag.cl
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile"
+  - family-names: Mabe-Castro
+    given-names: Diego
+    orcid: "https://orcid.org/0000-0002-6663-2153"
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile"
+  - family-names: Núñez-Espinosa
+    given-names: Cristian
+    orcid: "https://orcid.org/0000-0002-9896-7062"
+    email: cristian.nunez@umag.cl
+    affiliation: "Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile"
+repository-code: "https://github.com/matcasti/STATE-paper"
+license: MIT
+keywords:
+  - heart rate variability
+  - autonomic nervous system
+  - dynamical systems
+  - state-space model
+  - resilience

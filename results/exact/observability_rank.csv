@@ -1,0 +1,5 @@
+c,rank_isotropic_uncoupled,rank_uncoupled_distinct_rates,rank_coupled
+"(1,0)",1,1,1
+"(0,1)",1,1,2
+"(1,1)",1,2,2
+"(-1,1)",1,2,2
