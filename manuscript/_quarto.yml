@@ -7,6 +7,7 @@ format:
   docx:
     reference-doc: templates/ref.docx
   typst:
+    citeproc: true
     papersize: a4
     fontsize: 11pt
     template-partials:
