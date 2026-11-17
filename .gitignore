@@ -9,15 +9,11 @@
 .quarto/
 **/*.quarto_ipynb
 
-# rendered manuscripts: only the files named here are tracked
-manuscript/output/*/*
-!manuscript/output/journal/index.docx
-!manuscript/output/journal/index.pdf
-!manuscript/output/biorxiv/index.pdf
+# Quarto renders here; the files to upload are copied to submission/
+manuscript/_build/
 
 # regenerated at every render
 results/claims_check.csv
 
-# build stamps and upload bundles made by the Makefile
+# build stamps made by the Makefile
 .build/
-dist/

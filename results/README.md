@@ -8,7 +8,7 @@ Written by `R/analysis/`, read by `R/lib/state-numbers.R` (and so by the manuscr
 | `exact/exact_mfpt.csv` | Exact mean escape time and stationary variances by noise level σ. |
 | `exact/mfpt_validation.csv` | Monte Carlo escape time against the exact value. |
 | `exact/observability_rank.csv` | Rank of the observability matrix for the three dynamics of Proposition 1. |
-| `simulation/ensemble.rds` | Representative trajectories and ensemble bands (Figure 2, graphical abstract). |
+| `simulation/ensemble.rds` | Representative trajectories and ensemble bands (Figure 2). |
 | `simulation/ensemble_metrics.csv` | Per-replicate descriptors, systems A and B. |
 | `simulation/table_ensemble.csv` | Table 2. |
 | `simulation/auc_main.csv` | AUC of each descriptor, with bootstrap interval. |

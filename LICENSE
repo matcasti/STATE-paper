@@ -3,9 +3,9 @@ MIT License
 Copyright (c) 2026 Matías Castillo-Aguilar, Diego Mabe-Castro, Cristian Núñez-Espinosa
 
 Scope: this license covers the code and generated results of this repository:
-R/, results/ and the Makefile. It does not cover manuscript/ (manuscript text, figures,
-highlights, bibliography, templates and rendered documents), which remains the property of
-the authors and, once the article is published, is subject to the publisher's agreement.
+R/, results/ and the Makefile. It does not cover manuscript/ and submission/ (manuscript text,
+figures, highlights, cover letter, bibliography, templates and rendered documents), which remain the property of
+the authors and, once the article is published, are subject to the publisher's agreement.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

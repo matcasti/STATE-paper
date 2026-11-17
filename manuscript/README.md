@@ -1,25 +1,23 @@
-# manuscript/ — text, figures and rendered documents
+# manuscript/ — sources of the paper
 
-Quarto project. Render it from the repository root with `make journal` / `make biorxiv` (or `quarto render manuscript/index.qmd [--profile biorxiv]`). The first chunk of `index.qmd` makes R evaluate from the repository root, so `R/` and `results/` resolve.
+Everything here is edited by people or drawn by `R/figures/`; nothing here is a finished file. `make journal` and `make biorxiv` render it (into `_build/`, a scratch folder that git ignores) and copy the finished files to `../submission/`. The first chunk of `index.qmd` makes R evaluate from the repository root, so `R/` and `results/` resolve.
 
 ```
 manuscript/
 ├── index.qmd              the manuscript (main text, Appendix A, Appendix B)
-├── _quarto.yml            authors, bibliography, formats; journal output goes to output/journal/
-├── _quarto-biorxiv.yml    extra settings for --profile biorxiv; output goes to output/biorxiv/
+├── _quarto.yml            authors, bibliography, Word and PDF formats
+├── _quarto-biorxiv.yml    extra settings for the preprint version (--profile biorxiv)
 ├── references.bib         bibliography
 ├── Highlights.docx        five highlights for the journal (by hand)
+├── Cover_letter.md        cover letter to the editor (by hand; `make journal` turns it into Word)
 ├── templates/             ref.docx (Word styles), typst-show.typ (PDF title block)
-├── figures/
-│   ├── source/            fig-main.sketch: editable Figure 1 (by hand)
-│   ├── png/               images embedded in the text (fig-main from the sketch; fig-illustration, fig-robustness from R/figures/)
-│   └── print/             files uploaded to the journal: Figure_1.pdf (by hand), Figure_2.pdf, Figure_3.pdf, Graphical_abstract.tiff (from R/figures/)
-└── output/                rendered documents (only those listed below are tracked)
-    ├── journal/           index.docx (upload to the journal), index.pdf (PDF version)
-    └── biorxiv/           index.pdf (bioRxiv)
+└── figures/
+    ├── source/            fig-main.sketch: editable Figure 1 (by hand)
+    ├── png/               images embedded in the text (fig-main exported from the sketch; the others drawn by R/figures/)
+    └── print/             vector figures for upload: Figure_1.pdf (exported from the sketch), Figure_2.pdf, Figure_3.pdf (R/figures/)
 ```
 
-Edited by hand, not rebuilt by `make`: Figure 1 (re-export `png/fig-main.png` and `print/Figure_1.pdf` from the sketch) and `Highlights.docx`. The cover letter and the competing-interest form are prepared outside this repository.
+When Figure 1 changes, re-export both `png/fig-main.png` and `print/Figure_1.pdf` from the sketch. The competing-interest declaration is generated in the publisher's submission system, not here.
 
 ## Two versions from one source
 
@@ -27,7 +25,7 @@ Text that differs is wrapped in `::: {.content-visible when-profile="biorxiv"}` 
 
 | Version | Abstract and introduction |
 |---|---|
-| Journal (Perspective) | Frames the work as a viewpoint with formal support |
+| Journal (hypothesis paper) | Frames STATE as a testable hypothesis about the organization of autonomic regulation, with formal support |
 | bioRxiv | Leads with the original results; states that no empirical data were used |
 
 The project is a plain Quarto project, not `type: manuscript`: Quarto 1.7 fails to render Word output for a manuscript project that contains `content-visible` blocks.

@@ -1,5 +1,5 @@
 project:
-  output-dir: output/journal
+  output-dir: _build/journal
   render:
     - index.qmd
 

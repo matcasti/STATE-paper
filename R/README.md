@@ -16,6 +16,5 @@ Run everything from the **project root** (paths are relative to it): `make resul
 | `analysis/state-sim.R` | Main ensemble, noise sweep, dose–response, tolerance sensitivity, time-step convergence → `results/simulation/` and `results/sessionInfo.txt`. |
 | **`figures/`** | Scripts that draw. |
 | `figures/fig-state-sim.R` | Figure 2 and Figure 3 → PNG in `manuscript/figures/png/`, vector PDF in `manuscript/figures/print/`. |
-| `figures/fig-graphical-abstract.R` | Graphical abstract → `manuscript/figures/print/Graphical_abstract.tiff`. |
 
-Order matters: `analysis/` first, then `figures/`, because figures read `results/`. Seeds are fixed inside each script, so results are reproducible. Figure 1 is not drawn by code: it is exported by hand from `figures/source/fig-main.sketch`.
+Order matters: `analysis/` first, then `figures/`, because figures read `results/`. Seeds are fixed inside each script, so results are reproducible. Figure 1 is not drawn by code: it is exported by hand from `manuscript/figures/source/fig-main.sketch`.

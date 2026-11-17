@@ -1,5 +1,5 @@
-# bioRxiv preprint: `quarto render index.qmd --profile biorxiv`
+# bioRxiv preprint: `make biorxiv` (quarto render manuscript/index.qmd --profile biorxiv)
 # Same manuscript with a results-first abstract and introduction (blocks marked
-# `content-visible when-profile="biorxiv"` in index.qmd), written to its own folder.
+# `content-visible when-profile="biorxiv"` in index.qmd), rendered to its own build folder.
 project:
-  output-dir: output/biorxiv
+  output-dir: _build/biorxiv
